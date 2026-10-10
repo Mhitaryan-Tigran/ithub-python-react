@@ -1,0 +1,13 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; align-items: start; }
+.drop { display: grid; place-items: center; min-height: 220px; border: 2px dashed var(--line); border-radius: 12px; cursor: pointer; overflow: hidden; background: #fafafc; }
+.drop:hover { border-color: var(--accent); }
+.drop input { display: none; }
+.preview { max-width: 100%; max-height: 320px; display: block; }
+.file-meta { margin: 0; font-size: 14px; word-break: break-all; }
+.progress { position: relative; flex: 1; min-width: 160px; height: 28px; border-radius: 999px; background: #eef0f4; overflow: hidden; }
+.progress-bar { height: 100%; background: linear-gradient(90deg, #0071e3, #40a0ff); transition: width .2s; }
+.progress span { position: absolute; inset: 0; display: grid; place-items: center; font-size: 13px; font-weight: 700; }
+.thumb { max-width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); justify-self: start; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; font-size: 14px; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; word-break: break-all; }

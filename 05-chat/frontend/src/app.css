@@ -1,0 +1,21 @@
+.between { justify-content: space-between; }
+.login { max-width: 520px; }
+.chat { display: grid; grid-template-columns: 240px 1fr; gap: 16px; align-items: stretch; }
+.people ul { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 10px; }
+.people li { display: flex; align-items: center; gap: 10px; font-weight: 500; }
+.avatar { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #e8f0fe; color: var(--accent); font-weight: 700; font-size: 14px; }
+.people li.me .avatar { background: var(--accent); color: #fff; }
+.room { display: flex; flex-direction: column; height: 560px; padding: 0; overflow: hidden; }
+.room header { padding: 14px 20px; border-bottom: 1px solid var(--line); }
+.pill { padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+.pill.ok { background: #effaf3; color: var(--ok); }
+.pill.info { background: #eef5ff; color: #0b57b0; }
+.pill.error { background: #fff0f1; color: var(--bad); }
+.messages { flex: 1; list-style: none; margin: 0; padding: 16px 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+.system { align-self: center; font-size: 13px; color: var(--muted); }
+.bubble { align-self: flex-start; max-width: 70%; display: grid; gap: 2px; padding: 10px 14px; border-radius: 16px 16px 16px 4px; background: #f0f0f3; }
+.bubble.mine { align-self: flex-end; background: var(--accent); color: #fff; border-radius: 16px 16px 4px 16px; }
+.author { font-size: 12px; font-weight: 700; opacity: .75; }
+.when { font-size: 11px; opacity: .6; justify-self: end; }
+.composer { padding: 14px 20px; border-top: 1px solid var(--line); }
+@media (max-width: 720px) { .chat { grid-template-columns: 1fr; } }
